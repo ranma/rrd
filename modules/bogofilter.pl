@@ -22,10 +22,6 @@ my $picbase  = "$conf{OUTPATH}/bogofilter-";
 # global error variable
 my $ERR;
 
-# whoami?
-my $hostname = `/bin/hostname`;
-chomp $hostname;
-
 # generate database if absent
 if ( ! -e $datafile ) {
     # max 70000 for all values

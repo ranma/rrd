@@ -16,10 +16,6 @@ my @devices  = @{$conf{NETWORK_DEVICES}};
 # global error variable
 my $ERR;
 
-# whoami?
-my $hostname = `/bin/hostname`;
-chomp $hostname;
-
 # remove non-tuns
 @devices = grep { @{$_}[0] =~ /^tun/ } @devices;
 

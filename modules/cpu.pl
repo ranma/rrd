@@ -14,10 +14,6 @@ my $picbase   = "$conf{OUTPATH}/cpu-";
 # global error variable
 my $ERR;
 
-# whoami?
-my $hostname = `/bin/hostname`;
-chomp $hostname;
-
 for my $cpu ( qw(0 1) ) {
 
     # generate database if absent

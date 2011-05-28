@@ -18,10 +18,6 @@ my @size;
 # global error variable
 my $ERR;
 
-# whoami?
-my $hostname = `/bin/hostname`;
-chomp $hostname;
-
 # generate database if absent
 if ( ! -e $datafile ) {
     # max 100% for each value

@@ -15,10 +15,6 @@ my @devices  = @{$conf{NETWORK_DEVICES}};
 # global error variable
 my $ERR;
 
-# whoami?
-my $hostname = `/bin/hostname`;
-chomp $hostname;
-
 # get traffic data (only open NETDEV once)
 open NETDEV, '<', '/proc/net/dev' or die "can't open /proc/net/dev: $!";
 my (undef, undef, @netdev) = <NETDEV>;

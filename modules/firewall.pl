@@ -15,10 +15,6 @@ my $ipt_script = 'sudo /usr/local/sbin/iptables-rejects.sh';
 # global error variable
 my $ERR;
 
-# whoami?
-my $hostname = `/bin/hostname`;
-chomp $hostname;
-
 # generate database if absent
 if ( ! -e $datafile ) {
     RRDs::create($datafile,

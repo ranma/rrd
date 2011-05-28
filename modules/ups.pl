@@ -14,10 +14,6 @@ my $picbase  = "$conf{OUTPATH}/ups-";
 # global error variable
 my $ERR;
 
-# whoami?
-my $hostname = `/bin/hostname`;
-chomp $hostname;
-
 # generate database if absent
 if ( ! -e $datafile ) {
     RRDs::create($datafile,
