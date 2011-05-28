@@ -30,8 +30,6 @@ eval(`cat ~/.rrd-conf.pl`);
 
 # set variables
 
-my $batchrun = 1;
-
 my $content;
 open FH, "<", $module or die "Can't open $module\n";
 read FH, $content, 9999999;

@@ -8,8 +8,6 @@ use strict;
 use warnings;
 use RRDs;
 
-my $batchrun = 1;
-
 # parse configuration file
 my %conf;
 #my $return = do "/root/.rrd-conf.pl"; # does not work?!?
