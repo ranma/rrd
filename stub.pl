@@ -1,11 +1,12 @@
 #!/usr/bin/perl
-# $Id$
 #
-# RRD script to display io stats
-# 2003 (c) by Christian Garbs <mitch@cgarbs.de>
+# RRD script stub to run a module
+# 2011 (c) by Tobias Diedrich <ranma+github@tdiedrich.de>
 # Licensed under GNU GPL.
 #
-# This script should be run every 5 minutes.
+# Create a symlink to this script (e.g. network.pl -> stub.pl) and it will set
+# up the environment and run a the corresponding script from the modules
+# subdirectory.
 #
 use strict;
 use warnings;

@@ -1,5 +1,9 @@
 #!/usr/bin/perl
 #
+# RRD script stub to run all configured modules
+# 2011 (c) by Tobias Diedrich <ranma+github@tdiedrich.de>
+# Licensed under GNU GPL.
+#
 use strict;
 use warnings;
 use RRDs;

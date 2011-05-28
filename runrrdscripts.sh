@@ -1,4 +1,9 @@
 #!/bin/sh
+#
+# Shell wrapper around runrrd.pl
+# 2011 (c) by Tobias Diedrich <ranma+github@tdiedrich.de>
+# Licensed under GNU GPL.
+#
 
 PATH=/usr/bin:/bin:/usr/sbin:/sbin
 BASEDIR=`dirname $0`
